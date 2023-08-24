@@ -2,6 +2,7 @@ package org.selenium.pom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.selenium.pom.base.BasePage;
 
 public class StorePage extends BasePage {
@@ -18,6 +19,10 @@ public class StorePage extends BasePage {
     public StorePage enterTextInSearchField(String txt){
         driver.findElement(searchFld).sendKeys(txt);
         return this;
+    }
+
+    public boolean isLoaded(){
+        return wait.until(ExpectedConditions.urlContains("/store"));
     }
 
     public StorePage search(String txt){

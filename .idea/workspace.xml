@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/MyFirstTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/BillingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/objects/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckOutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/JacksonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/myBillingAddress.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/products.json" afterDir="false" />
+    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Selenium Test Framework">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/MyFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/MyFirstTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckOutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +28,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2Tphc3O5FZaNykDzlckc0yRKD0Q" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -105,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
         <pattern>
@@ -162,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer" />
-        <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (3)" />
-        <item itemvalue="TestNG.MyFirstTestCase.loginAndCheckOutUsingDirectBankTransfer" />
         <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (2)" />
         <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (1)" />
+        <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (4)" />
+        <item itemvalue="TestNG.MyFirstTestCase.loginAndCheckOutUsingDirectBankTransfer" />
       </list>
     </recent_temporary>
   </component>
@@ -178,9 +167,28 @@
       <option name="presentableId" value="Default" />
       <updated>1691746007250</updated>
     </task>
+    <task id="LOCAL-00001" summary="Selenium Test Framework">
+      <option name="closed" value="true" />
+      <created>1692786004089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692786004089</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Selenium Test Framework">
+      <option name="closed" value="true" />
+      <created>1692786127245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692786127245</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Selenium Test Framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Selenium Test Framework" />
   </component>
 </project>

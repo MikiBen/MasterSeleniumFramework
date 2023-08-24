@@ -2,6 +2,7 @@ package org.selenium.pom.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
 
@@ -21,13 +22,19 @@ public class CheckOutPage extends BasePage   {
     private final By passwordFld = By.id("password");
     private final By loginButton = By.cssSelector("button[value='Login']");
 
+
+    private final By overlay = By.cssSelector(".blockUI.blockOverlay");
+
     public CheckOutPage(WebDriver driver) {
         super(driver);
     }
 
     public CheckOutPage enterFirstName(String txt){
-        driver.findElement(firstNameFld).clear();
-        driver.findElement(firstNameFld).sendKeys(txt);
+        WebElement e = waitForElementToBeVisible(firstNameFld);
+        e.clear();
+        e.sendKeys(txt);
+       // driver.findElement(firstNameFld).clear();
+       // driver.findElement(firstNameFld).sendKeys(txt);
         return this;
     }
     public CheckOutPage enterLastName(String txt){
@@ -56,8 +63,10 @@ public class CheckOutPage extends BasePage   {
         return this;
     }
     public CheckOutPage clickPlaceOrder(){
+        wairForIverlaysToDisappear(overlay);
         driver.findElement(placeOrderBtn).click();
         return this;
+
     }
 
     public String getNotice(){

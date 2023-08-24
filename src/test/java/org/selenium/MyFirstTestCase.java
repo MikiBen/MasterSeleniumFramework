@@ -16,8 +16,9 @@ import java.io.InputStream;
 
 public class MyFirstTestCase extends BaseTest {
     @Test
-     public void guestCheckOutUsingDirectBankTransfer() throws InterruptedException, IOException {
+     public void guestCheckOutUsingDirectBankTransfer() throws IOException, InterruptedException {
 
+        String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
         Product product = new Product(1215);
 
@@ -33,8 +34,9 @@ public class MyFirstTestCase extends BaseTest {
         StorePage storePage = new HomePage(driver).
                 load().
                 navigateToStoreUsingMenu().
-                search("Blue").
-                clickSearchButton();
+       // storePage.isLoaded();
+        search(searchFor);
+
        /*
         StorePage storePage = homePage.navigateToStoreUsingMenu();
 
@@ -43,12 +45,12 @@ public class MyFirstTestCase extends BaseTest {
                 clickSearchButton();
 */
        // storePage.search("Blue");
-        Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
+        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
 
         storePage.clickAddToCartBtn(product.getName());
-        Thread.sleep(3000);
+       Thread.sleep(3000);
         CartPage cartPage = storePage.clickViewCart();
-
+       // cartPage.idLoaded();
         Assert.assertEquals(cartPage.getProductName(), product.getName());
 
         CheckOutPage checkOutPage = cartPage.
