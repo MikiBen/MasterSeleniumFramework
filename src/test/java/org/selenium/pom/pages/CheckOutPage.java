@@ -1,8 +1,11 @@
 package org.selenium.pom.pages;
 
+import lombok.Setter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.selenium.pom.base.BasePage;
 import org.selenium.pom.objects.BillingAddress;
 
@@ -25,6 +28,10 @@ public class CheckOutPage extends BasePage   {
 
     private final By overlay = By.cssSelector(".blockUI.blockOverlay");
 
+    private final By countryDropDown = By.id("billing_country");
+    private final By stateDropDown = By.id("billing_state");
+
+    private final By directBankTransferRadioBtn = By.id("payment_method_bacs");
     public CheckOutPage(WebDriver driver) {
         super(driver);
     }
@@ -42,6 +49,19 @@ public class CheckOutPage extends BasePage   {
         driver.findElement(lastNameFld).sendKeys(txt);
         return this;
     }
+
+    public CheckOutPage selectCountry(String countryName){
+        Select select = new Select(driver.findElement(countryDropDown));
+        select.selectByVisibleText(countryName);
+        return this;
+    }
+
+    public CheckOutPage selectState(String stateName){
+        Select select = new Select(driver.findElement(stateDropDown));
+        select.selectByVisibleText(stateName);
+        return this;
+    }
+
     public CheckOutPage enterAddressLineOne(String txt){
         driver.findElement(addressLineOneFld).clear();
         driver.findElement(addressLineOneFld).sendKeys(txt);
@@ -88,7 +108,7 @@ public class CheckOutPage extends BasePage   {
         return this;
     }
     public CheckOutPage enterPassword(String password) {
-        driver.findElement(usernameFld).sendKeys(password);
+        driver.findElement(passwordFld).sendKeys(password);
         return this;
     }
 
@@ -102,10 +122,21 @@ public class CheckOutPage extends BasePage   {
     public CheckOutPage setBillingAddress(BillingAddress billingAddress){
         return  enterFirstName(billingAddress.getFirstName()).
                 enterLastName(billingAddress.getLastName()).
+                selectCountry(billingAddress.getCountry()).
                 enterAddressLineOne(billingAddress.getAddressLineOne()).
                 enterBillingCity(billingAddress.getCity()).
+                selectState(billingAddress.getState()).
                 enterBillingPostCode(billingAddress.getPostalCode()).
                 enterBillingEmail(billingAddress.getEmail());
 
     }
+
+    public CheckOutPage selectDirectBankTransfer(){
+        WebElement e = wait.until(ExpectedConditions.elementToBeClickable(directBankTransferRadioBtn));
+        if(!e.isSelected()){
+            e.click();
+        }
+        return this;
+    }
+
 }

@@ -56,6 +56,7 @@ public class MyFirstTestCase extends BaseTest {
         CheckOutPage checkOutPage = cartPage.
                 checkout().
                 setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
                // enterFirstName("demo").
               //  enterLastName("user").
               //  enterAddressLineOne("San Francisco").
