@@ -11,7 +11,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void startDriver(){
-        driver = new DriverManger().initializeDruver();
+        driver = new DriverManger().initializeDriver();
     }
 
     @AfterMethod
