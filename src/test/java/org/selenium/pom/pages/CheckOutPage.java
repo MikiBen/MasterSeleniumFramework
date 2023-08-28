@@ -90,7 +90,9 @@ public class CheckOutPage extends BasePage   {
     }
 
     public String getNotice(){
-       return driver.findElement(successNotice).getText();
+
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(successNotice)).getText();
+       //return driver.findElement(successNotice).getText();
 
     }
 
