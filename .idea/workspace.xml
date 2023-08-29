@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add WebDriverManager">
-      <change afterPath="$PROJECT_DIR$/Drivers/chromedriver/win64/116.0.5845.96/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/geckodriver/win64/0.33.0/geckodriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/resolution.properties" afterDir="false" />
+    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add browser selection">
+      <change afterPath="$PROJECT_DIR$/Drivers/msedgedriver/win64/116.0.1938.62/msedgedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/constants/DriverType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/MyFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/resolution.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/resolution.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/CheckOutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/pages/StorePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -58,36 +58,99 @@
       <recent name="org.selenium.pom.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyFirstTestCase">
-    <configuration name="MyFirstTestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)">
+    <configuration name="C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.selenium.pom" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.MyFirstTestCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstTestCase (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.selenium.pom.*" />
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.selenium.pom" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.MyFirstTestCase" />
-      <option name="METHOD_NAME" value="guestCheckOutUsingDirectBankTransfer" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.MyFirstTestCase" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=CHROME" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstTestCase" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MasterSeleniumFramework" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.selenium.pom.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="org.selenium.pom.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.MyFirstTestCase" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -116,24 +179,6 @@
       <module name="MasterSeleniumFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.selenium.pom.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.selenium" />
-      <option name="MAIN_CLASS_NAME" value="org.selenium.pom.tests.MyFirstTestCase" />
-      <option name="METHOD_NAME" value="guestCheckOutUsingDirectBankTransfer" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyFirstTestCase.guestCheckOutUsingDirectBankTransfer" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MasterSeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
           <option name="PATTERN" value="org.selenium.pom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
@@ -202,12 +247,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="TestNG">
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml" />
+      <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)" />
+      <item itemvalue="TestNG.MyFirstTestCase (1)" />
+      <item itemvalue="TestNG.MyFirstTestCase" />
+      <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (2)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)" />
+        <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml" />
+        <item itemvalue="TestNG.MyFirstTestCase (1)" />
         <item itemvalue="TestNG.MyFirstTestCase" />
         <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (2)" />
-        <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (1)" />
-        <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692955574428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add browser selection">
+      <option name="closed" value="true" />
+      <created>1693206508596</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693206508596</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -269,6 +350,18 @@
     <MESSAGE value="Add Synchronization" />
     <MESSAGE value="Add Page Factory in CartPage Class" />
     <MESSAGE value="Add WebDriverManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add WebDriverManager" />
+    <MESSAGE value="Add browser selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add browser selection" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

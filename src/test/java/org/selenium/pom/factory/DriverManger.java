@@ -5,23 +5,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.selenium.pom.constants.DriverType;
 
 public class DriverManger {
 
-    public WebDriver initializeDriver(){
+    public WebDriver initializeDriver(String browser){
         WebDriver driver;
-
-        String browser = System.getProperty("browser");
-        switch (browser){
-            case "Chrome":
+        String rowser;
+        browser = System.getProperty("browser", browser);
+       // localBrowser = browser;
+        switch (DriverType.valueOf(browser)){
+            case CHROME:
                 WebDriverManager.chromedriver().cachePath("Drivers").setup();
                  driver = new ChromeDriver();
                 break;
-            case "Edge":
+            case EDGE:
                 WebDriverManager.edgedriver().cachePath("Drivers").setup();
                  driver = new EdgeDriver();
                  break;
-            case "Firefox":
+            case FIREFOX:
                 WebDriverManager.firefoxdriver().cachePath("Drivers").setup();
                  driver = new FirefoxDriver();
                  break;
