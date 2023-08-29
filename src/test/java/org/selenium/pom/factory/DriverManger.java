@@ -11,8 +11,7 @@ public class DriverManger {
 
     public WebDriver initializeDriver(String browser){
         WebDriver driver;
-        String rowser;
-        browser = System.getProperty("browser", browser);
+
        // localBrowser = browser;
         switch (DriverType.valueOf(browser)){
             case CHROME:

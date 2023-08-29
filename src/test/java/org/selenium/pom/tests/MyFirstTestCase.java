@@ -30,7 +30,7 @@ public class MyFirstTestCase extends BaseTest {
             setPostalCode("94188").
             setEmail("mm@pp.pl");
 */
-        StorePage storePage = new HomePage(driver).
+        StorePage storePage = new HomePage(getDriver()).
                 load().
                 navigateToStoreUsingMenu().
        // storePage.isLoaded();
@@ -108,4 +108,58 @@ public class MyFirstTestCase extends BaseTest {
     }
 
  */
+
+    @Test
+    public void guestCheckOutUsingDirectBankTransfer2() throws IOException, InterruptedException {
+
+        String searchFor = "Blue";
+        BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
+        Product product = new Product(1215);
+
+
+        //BillingAddress billingAddress = new BillingAddress("demo", "Demo2","San","San" , "94188", "mm@pp.pl");
+           /* setFirstName("demo").
+            setLastName("Demo2").
+            setAddressLineOne("San").
+            setCity("San").
+            setPostalCode("94188").
+            setEmail("mm@pp.pl");
+*/
+        StorePage storePage = new HomePage(getDriver()).
+                load().
+                navigateToStoreUsingMenu().
+                // storePage.isLoaded();
+                        search(searchFor);
+
+       /*
+        StorePage storePage = homePage.navigateToStoreUsingMenu();
+
+        storePage.
+                enterTextInSearchField("Blue").
+                clickSearchButton();
+*/
+        // storePage.search("Blue");
+        Assert.assertEquals(storePage.getTitle(), "Search results: “" + searchFor + "”");
+
+        storePage.clickAddToCartBtn(product.getName());
+        //Thread.sleep(3000);
+        CartPage cartPage = storePage.clickViewCart();
+        // cartPage.idLoaded();
+        Assert.assertEquals(cartPage.getProductName(), product.getName());
+
+        CheckOutPage checkOutPage = cartPage.
+                checkout().
+                setBillingAddress(billingAddress).
+                selectDirectBankTransfer().
+                // enterFirstName("demo").
+                //  enterLastName("user").
+                //  enterAddressLineOne("San Francisco").
+                //   enterBillingCity("San Francisco").
+                //   enterBillingPostCode("94188").
+                //   enterBillingEmail("miki@ww.pp").
+                        clickPlaceOrder();
+        // Thread.sleep(3000);
+        Assert.assertEquals(checkOutPage.getNotice(), "Thank you. Your order has been received.");
+
+    }
 }

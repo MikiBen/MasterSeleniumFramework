@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add browser selection">
-      <change afterPath="$PROJECT_DIR$/Drivers/msedgedriver/win64/116.0.1938.62/msedgedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/constants/DriverType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add testng.xml file">
+      <change afterPath="$PROJECT_DIR$/testng_ff.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drivers/resolution.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/resolution.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,6 +269,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer" />
       <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml" />
       <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)" />
       <item itemvalue="TestNG.MyFirstTestCase (1)" />
@@ -341,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693206508596</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add testng.xml file">
+      <option name="closed" value="true" />
+      <created>1693300808149</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693300808149</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -351,14 +361,15 @@
     <MESSAGE value="Add Page Factory in CartPage Class" />
     <MESSAGE value="Add WebDriverManager" />
     <MESSAGE value="Add browser selection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add browser selection" />
+    <MESSAGE value="Add testng.xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add testng.xml file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java</url>
-          <line>30</line>
+          <line>29</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

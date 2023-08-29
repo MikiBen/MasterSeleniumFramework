@@ -8,18 +8,27 @@ import org.testng.annotations.Parameters;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private void setDriver(WebDriver driver){
+        this.driver.set(driver);
+    }
+
+    protected WebDriver getDriver(){
+        return this.driver.get();
+    }
 
     @Parameters("browser")
     @BeforeMethod
     public void startDriver(String browser){
-
-        driver = new DriverManger().initializeDriver(browser);
+        browser = System.getProperty("browser", browser);
+        setDriver(new DriverManger().initializeDriver(browser));
+        System.out.println("CURRENT THREAD: " + Thread.currentThread().getId() + " DRIVER : " + getDriver());
     }
 
     @AfterMethod
-    public void quitDriver(){
-        driver.quit();
+    public void quitDriver() throws InterruptedException {
+        Thread.sleep(100);
+        driver.get().quit();
     }
 
 
