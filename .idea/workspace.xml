@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add parrallel test (usinf testng.xml, Maven Comand)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/PropertyUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add config properties file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/constants/EnvType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/stg_config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Drivers/resolution.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/resolution.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/JacksonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/JacksonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/prod_config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -44,21 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/src/test/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.selenium.pom.pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MikołajNarloch\OneDrive - QualityMinds GmbH\Dokumenty\Programy\MasterSeleniumFramework\src\test\resources" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)">
@@ -361,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693309844772</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add config properties file">
+      <option name="closed" value="true" />
+      <created>1693385518931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693385518931</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -373,7 +380,8 @@
     <MESSAGE value="Add browser selection" />
     <MESSAGE value="Add testng.xml file" />
     <MESSAGE value="Add parrallel test (usinf testng.xml, Maven Comand)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add parrallel test (usinf testng.xml, Maven Comand)" />
+    <MESSAGE value="Add config properties file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add config properties file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

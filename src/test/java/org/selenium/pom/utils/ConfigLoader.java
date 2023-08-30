@@ -1,6 +1,7 @@
 package org.selenium.pom.utils;
 
 import org.checkerframework.checker.units.qual.C;
+import org.selenium.pom.constants.EnvType;
 
 import java.util.Properties;
 
@@ -9,7 +10,18 @@ public class ConfigLoader {
     private static ConfigLoader configLoader;
 
     private ConfigLoader(){
-        properties = PropertyUtils.propertyLoader("src/test/resources/config.properties");
+        String env = System.getProperty("env", String.valueOf(EnvType.PRODUCTION)); //ustawienie domyślnego środowiska
+        switch (EnvType.valueOf(env)){
+            case STAGE:
+                properties = PropertyUtils.propertyLoader("src/test/resources/stg_config.properties");
+            break;
+            case PRODUCTION:
+                properties = PropertyUtils.propertyLoader("src/test/resources/prod_config.properties");
+                  break;
+            default:throw new IllegalStateException("Invalid env type: " + env);
+
+        }
+
     }
 
     public static ConfigLoader getInstance(){
