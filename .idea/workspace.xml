@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add testng.xml file">
-      <change afterPath="$PROJECT_DIR$/testng_ff.xml" afterDir="false" />
+    <list default="true" id="78f16838-e48d-496a-823c-7c6108856251" name="Changes" comment="Add parrallel test (usinf testng.xml, Maven Comand)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/ConfigLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/PropertyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Drivers/resolution.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/resolution.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/factory/DriverManger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/tests/MyFirstTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/JacksonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/selenium/pom/utils/JacksonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -279,9 +281,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml (1)" />
+        <item itemvalue="TestNG.MyFirstTestCase" />
         <item itemvalue="TestNG.C:/Users/MikołajNarloch/OneDrive - QualityMinds GmbH/Dokumenty/Programy/MasterSeleniumFramework/testng.xml" />
         <item itemvalue="TestNG.MyFirstTestCase (1)" />
-        <item itemvalue="TestNG.MyFirstTestCase" />
         <item itemvalue="TestNG.MyFirstTestCase.guestCheckOutUsingDirectBankTransfer (2)" />
       </list>
     </recent_temporary>
@@ -351,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693300808149</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add parrallel test (usinf testng.xml, Maven Comand)">
+      <option name="closed" value="true" />
+      <created>1693309844772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693309844772</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -362,7 +372,8 @@
     <MESSAGE value="Add WebDriverManager" />
     <MESSAGE value="Add browser selection" />
     <MESSAGE value="Add testng.xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add testng.xml file" />
+    <MESSAGE value="Add parrallel test (usinf testng.xml, Maven Comand)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add parrallel test (usinf testng.xml, Maven Comand)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

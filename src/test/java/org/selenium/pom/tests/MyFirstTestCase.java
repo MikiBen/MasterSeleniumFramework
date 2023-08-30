@@ -15,7 +15,7 @@ import java.io.IOException;
 
 public class MyFirstTestCase extends BaseTest {
     @Test
-     public void guestCheckOutUsingDirectBankTransfer() throws IOException, InterruptedException {
+     public void guestCheckOutUsingDirectBankTransfer() throws IOException {
 
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
@@ -67,50 +67,9 @@ public class MyFirstTestCase extends BaseTest {
         Assert.assertEquals(checkOutPage.getNotice(), "Thank you. Your order has been received.");
 
     }
-/*
-    @Test
-    public void loginAndCheckOutUsingDirectBankTransfer() throws InterruptedException {
-
-        driver.get("https://askomdch.com/");
-
-        HomePage homePage = new HomePage(driver);
-        StorePage storePage = homePage.navigateToStoreUsingMenu();
-
-        storePage.
-                enterTextInSearchField("Blue").
-                clickSearchButton();
-
-        // storePage.search("Blue");
-        Assert.assertEquals(storePage.getTitle(), "Search results: “Blue”");
-
-        storePage.clickAddToCartBtn("Blue Shoes");
-        Thread.sleep(5000);
-        CartPage cartPage = storePage.clickViewCart();
-
-        Assert.assertEquals(cartPage.getProductName(), "Blue Shoes");
-        CheckOutPage checkOutPgae = cartPage.checkout();
-
-        checkOutPgae.clickToLoginLink();
-        Thread.sleep(5000);
-
-        checkOutPgae.
-                login("demouser2", "demopwd").
-                enterFirstName("demo").
-                enterLastName("user").
-                enterAddressLineOne("San Francisco").
-                enterBillingCity("San Francisco").
-                enterBillingPostCode("94188").
-                enterBillingEmail("miki@ww.pp").
-                clickPlaceOrder();
-        Thread.sleep(5000);
-        Assert.assertEquals(checkOutPgae.getNotice(), "Thank you. Your order has been received.");
-
-    }
-
- */
 
     @Test
-    public void guestCheckOutUsingDirectBankTransfer2() throws IOException, InterruptedException {
+    public void secondTest() throws IOException {
 
         String searchFor = "Blue";
         BillingAddress billingAddress = JacksonUtils.deserializeJson("myBillingAddress.json", BillingAddress.class);
@@ -162,4 +121,5 @@ public class MyFirstTestCase extends BaseTest {
         Assert.assertEquals(checkOutPage.getNotice(), "Thank you. Your order has been received.");
 
     }
+
 }
